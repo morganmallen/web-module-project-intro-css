@@ -2,36 +2,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <!-- Link your CSS stylesheet -->
-    
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-        Plan your Visit
-        Learn about the Park
-        Get Involved
-   
-      
-      "header_img.jpg"
-      Yosemite Park Guide
-      Come explore California’s beautiful wilderness.
-      Always open. Reservations are not available or required to enter the park.
-      
-      Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-      
-      First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.
-      
-      "https://image.flaticon.com/icons/svg/2979/2979348.svg"
-      Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park’s ecosystems. This blog provides updates about fires in Yosemite. Check for current fire restrictions.
-      
-      "https://image.flaticon.com/icons/svg/820/820374.svg"
-      We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the park entrance fee upon arrival (there's no need to pay it in advance).
-    
-      "footer_img.png"
-      
-      
-        Plan your Visit
-        Learn about the Park
-        Get Involved
+  <header>
+    <nav>
+       <a href ="Plan your Visit" class="orange">Plan your<br>Visit</a>
+       <a href ="Learn about the Park" class="blue">Learn about<br>the Park</a>
+       <a href ="Get Involved" class="yellow">Get<br>Involved</a>
+    </nav>
+   </header>
+   <section class ="cta">
+      <div class = "img">
+        <img src="assets/header_img.jpg" alt="sunrise" class="round">
+        </div>
+      <div class = "text">
+      <div>
+          <h1>Yosemite Park Guide</h1>
+          <h2>Come explore California’s beautiful wilderness.</h2>
+          <p>Always open. Reservations are not available or required to enter the park.</p>
+        </div>
+      </div>
+      </div>
+   </section>
+   <section>
+     <div class = "beige">
+       <p>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.</p>
+       <p>First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</p>
+     </div>
+   </section>
+   <section>
+     <div class="fire">
+        <img src="https://thumbs.dreamstime.com/b/hiking-campfire-icon-cartoon-style-vector-web-design-isolated-white-background-186851586.jpg" alt="fire">
+        <p>Fire is a natural and essential part of Yosemite. We manage fire carefully and study how it interacts with the park’s ecosystems. This blog provides updates about fires in Yosemite. Check for <span class ="bold">current fire restrictions.</span></p>
+     </div>
+     <div class="trailor">
+        <img src="data:image/jpeg;base64,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" alt="trailor">
+        <p>We strongly recommend that you make reservations for lodging, camping, and backpacking. You can pay the <span class ="bold">park entrance fee</span> upon arrival (there's no need to pay it in advance).</p>
+     </div>
+   </section>
+   <section class="bg-img">
+     <!--empty with background img-->
+   </section>
+  <footer>
+    <nav>
+      <a href ="Plan your Visit" class="orange">Plan your<br>Visit</a>
+      <a href ="Learn about the Park" class="blue">Learn about<br>the Park</a>
+      <a href ="Get Involved" class="yellow">Get<br>Involved</a>
+   </nav>
+  </footer>
       
 </body>
 </html>
